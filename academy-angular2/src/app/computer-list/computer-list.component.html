@@ -1,0 +1,13 @@
+<div *ngFor="let computer of computers$ | async">
+  <div>
+  Computer name: {{computer.name}}
+  <br/>
+
+  Computer IP address: {{computer.ipAddress}}
+  </div>
+  <div>
+    <button (click)="onNavigate(computer)">go to computer</button>
+  </div>
+<br/>
+<br/>
+</div>

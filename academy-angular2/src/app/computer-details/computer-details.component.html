@@ -1,0 +1,23 @@
+<div>
+  Computer ID: {{computerId}}
+</div>
+
+<br/>
+<br/>
+
+<div *ngIf="computer">
+
+  <div>
+  Computer name: {{computer.name}}
+  <br/>
+
+  Computer IP address: {{computer.ipAddress}}
+</div>
+
+<br/>
+<br/>
+<div *ngIf="usageData$">
+  <div *ngFor="let ud of usageData$ | async">
+    CPU usage: {{ud.cpuUsage}}
+    </div>
+</div>

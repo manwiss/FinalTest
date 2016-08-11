@@ -1,0 +1,17 @@
+
+<div *ngFor="let host of hosts$ | async">
+  <div *ngIf="host.clusterId == clusterId">
+  Cluster name: {{host.name}}, 
+  <br/>
+  Host Id: {{host.hostId}},
+  <br/>
+  Cluster Id {{host.clusterId}}
+  <br/>
+  ProcessorCount {{host.processorCount}}
+  <br/>
+  <button >Go to host</button>
+  <br/>
+  <br/>
+  </div>
+  </div>
+   
